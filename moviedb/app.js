@@ -11,4 +11,5 @@ fetch(url)
 		posterElem.src = `https://image.tmdb.org/t/p/original${data.poster_path}`;
 		const descripcionElem = document.querySelector("#descripcion");
 		descripcionElem.innerHTML = data.overview;
-	});
+	})
+	.catch(console.warn);
